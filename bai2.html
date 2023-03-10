@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let electricNumber = +prompt('số điện là ');
+    let electricNumberToPay1 = electricNumber * 1484
+    let electricNumberToPay2 =( electricNumber - 50 ) * 1533 + electricNumberToPay1
+    let electricNumberToPay3 = (electricNumber -100) * 1768 + electricNumberToPay2
+    let electricNumberToPay4 = (electricNumber - 200) * 2242 + electricNumberToPay3
+    let electricNumberToPay5 = (electricNumber - 300) * 2503 + electricNumberToPay4
+    let electricNumberToPay6 = (electricNumber - 400) * 2587 + electricNumberToPay5
+    if (0 <= electricNumber &&electricNumber<=50 ){
+        alert(electricNumberToPay1.toLocaleString() +' VNĐ' )
+    } else if ( 51 <= electricNumber <=100){
+        alert(electricNumberToPay2.toLocaleString() +' VNĐ')
+    }else if (101 <= electricNumber && electricNumber <=200 ){
+        alert(electricNumberToPay3.toLocaleString() +' VNĐ')
+    }else if (201 <= electricNumber && electricNumber <=300){
+        alert(electricNumberToPay4.toLocaleString() +' VNĐ')
+    }else if (301 <= electricNumber && electricNumber <=400){
+        alert(electricNumberToPay5.toLocaleString() +' VNĐ')
+    }else if (electricNumber>400){
+        alert(electricNumberToPay6.toLocaleString() +' VNĐ')
+
+    }
+</script>
+</body>
+</html>
